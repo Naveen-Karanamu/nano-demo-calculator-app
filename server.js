@@ -11,7 +11,7 @@ const baseRouter = express.Router();
 
 baseRouter.get("/greeting", (req, res) => {
   try {
-    return res.send("Hello World");
+    return res.send("Hello World!");
   } catch (error) {
     return res.json({ code: 500, Error: error });
   }
